@@ -528,7 +528,7 @@ header .navbar ul li a:hover {
   position:absolute;
   top: 0;
   left: 0;
-  height: 200%;
+  height: 170%;
   width: 100%;
 }
 
@@ -589,6 +589,59 @@ header .navbar ul li a:hover {
   opacity: 0; /* Hidden by default */
   visibility: hidden; /* Invisible initially */
   transition: opacity 0.3s ease, visibility 0s ease 0.3s;
+}
+
+.overlay {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  z-index: 999; /* Below the details bar */
+}
+
+        /* Overlay to dim the background */
+        .details-bar {
+  display: none; /* Hidden by default */
+  position: fixed;
+  top: 50%; /* Center vertically */
+  left: 50%; /* Center horizontally */
+  transform: translate(-50%, -50%); /* Adjust position to truly center */
+  width: 90%;
+  max-width: 600px;
+  background: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+  padding: 1.5rem;
+  z-index: 1000; /* Above the overlay */
+  text-align: center;
+  border-radius: 10px;
+}
+
+.details-bar h2 {
+  margin: 0.5rem 0;
+}
+
+.details-bar p {
+  font-size: 1.7rem;
+  margin: 0.5rem 0;
+}
+
+/* Back Button */
+.back-btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background: #ff5722;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.back-btn:hover {
+  background: #e64a19;
 }
 
 .skills .skills-container .skill-card:hover {
@@ -1241,9 +1294,18 @@ footer {
   position:absolute;
   top: 0;
   left: 0;
-  height: 135%;
+  height: 496%;
   width: 100%;
 }
+.experience .content .desc img {
+  max-width: 100%; /* Ensures the image doesn't exceed the container width */
+  height: auto;    /* Maintains the aspect ratio of the image */
+  display: block;  /* Removes any inline spacing below the image */
+  margin: 0 auto;  /* Centers the image horizontally if needed */
+  padding: 1rem; 
+  border-radius: 6px; /* Optional: Makes the image corners rounded */
+}
+
 .experience .timeline::after {
   content: "";
   position: absolute;
@@ -1353,7 +1415,7 @@ footer {
 }
 .morebtn .btn span {
   font-weight: 600;
-  font-size: 1.7rem;
+  font-size: 3.5rem;
   font-family: "Nunito", sans-serif;
 }
 .morebtn .btn i {
@@ -1367,6 +1429,39 @@ footer {
 .morebtn .btn:hover i {
   transform: translateX(5px);
 }
+
+.morebtn1 {
+  display: flex;
+  justify-content: center;
+}
+.morebtn1 .btn {
+  position: relative;
+  line-height: 0;
+  padding: 1.6rem 3rem;
+  border-radius: 0.5em;
+  transition: 0.5s;
+  color: #fff;
+  background: #2506ad;
+  box-shadow: 0px 5px 10px rgba(48, 68, 247, 0.6);
+  text-align: center;
+}
+.morebtn1 .btn span {
+  font-weight: 600;
+  font-size: 2.5rem;
+  font-family: "Nunito", sans-serif;
+}
+.morebtn1 .btn i {
+  margin-left: 0.3rem;
+  font-size: 1.5rem;
+  transition: 0.3s;
+}
+.morebtn1 .btn:hover {
+  background: #1a047e;
+}
+.morebtn1 .btn:hover i {
+  transform: translateX(5px);
+}
+
 
 .experience .quote {
   text-align: center;
