@@ -14,20 +14,24 @@ $(document).ready(function () {
         } else {
             document.querySelector('#scroll-top').classList.remove('active');
         }
+    });
 
-        // scroll spy
-        $('section').each(function () {
-            let height = $(this).height();
-            let offset = $(this).offset().top - 200;
-            let top = $(window).scrollTop();
-            let id = $(this).attr('id');
+    // highlight the current page in the nav bar (multi-page site, not scroll-spy)
+    (function highlightActiveNavLink() {
+        let currentPage = window.location.pathname.split('/').pop();
+        if (currentPage === '') currentPage = 'index.html';
 
-            if (top > offset && top < offset + height) {
-                $('.navbar ul li a').removeClass('active');
-                $('.navbar').find(`[href="#${id}"]`).addClass('active');
+        $('.navbar ul li a').each(function () {
+            const linkHref = $(this).attr('href');
+            if (!linkHref) return;
+            const linkPage = linkHref.split('/').pop();
+
+            $(this).removeClass('active');
+            if (linkPage === currentPage) {
+                $(this).addClass('active');
             }
         });
-    });
+    })();
 
     // smooth scrolling
     $('a[href*="#"]').on('click', function (e) {
