@@ -1,275 +1,553 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
-    
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- Favicon -->
-    <link id='favicon' rel="shortcut icon" href="./assets/images/favicon.png" type="image/x-png">
-    <title>Portfolio | B.Kirtigan.P</title>
-</head>
-<body oncontextmenu="return false">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Vendor CSS Files -->
+    <link
+      href="assets/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet" />
+    <link
+      href="assets/vendor/owl.carousel/assets/owl.carousel.min.css"
+      rel="stylesheet"
+    />
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet" />
+    <link href="assets/vendor/venobox/venobox.css" rel="stylesheet" />
 
-<!-- pre loader -->
-<!-- <div class="loader-container">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Favicon -->
+    <link
+      id="favicon"
+      rel="shortcut icon"
+      href="./assets/images/favicon.png"
+      type="image/x-png"
+    />
+    <title>Portfolio | B.Kirtigan.P</title>
+  </head>
+  <body oncontextmenu="return false;">
+    <!-- pre loader -->
+    <!-- <div class="loader-container">
   <img draggable="false" src="./assets/images/preloader.gif" alt="">
 </div> -->
 
-<!-- navbar starts -->
-<header>
-        <a href="" class="logo"><i class="fab fa-studiovinari" style="color: rgb(255, 162, 0);"></i> Kirtigan</a>
+    <!-- navbar starts -->
+    <header>
+      <a href="" class="logo"
+        ><i class="fab fa-studiovinari" style="color: rgb(255, 162, 0)"></i>
+        Kirtigan</a
+      >
 
-        <div id="menu" class="fas fa-bars"></div>
-        <nav class="navbar">
-            <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a class="active" href="skill.html">Skills</a></li>
-            <li><a href="education.html">Education</a></li>
-            <li><a href="project.html">Project</a></li>
-            <li><a href="experience.html">Experience</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-</header>
-<!-- navbar ends -->
-<section class="skills" id="skills">
-  <div id="particles-js"></div>
-    <div class="skills-header">
-        <br>
- <br>
- <br>
-      <h2>
-        <i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span>
-      </h2>
-    </div>
-  
-    <div class="skills-container">
-      <div class="skill-card" onclick="showDetails('HTML', 'HyperText Markup Language (HTML) is the standard language for creating web pages. My journey with HTML began during my diploma studies, where I built my first web pages and learned the foundational concepts. During my degree, I gained advanced knowledge of HTML5 features, like multimedia elements and local storage, and applied these in real-world projects. Over time, consistent practice and exposure to challenging projects refined my expertise in HTML, making me confident in creating accessible and well-structured web applications.', '96%')">
-       <img src="./src/png/htmllogo.png" alt="HTML logo" />
-        <p>HTML</p>
-        <div class="rating">
-          <p class="rating-text">Rating: <span class="rating-percentage">96%</span></p>
-          <progress class="rating-bar" value="96" max="100"></progress>
-        </div>
+      <div id="menu" class="fas fa-bars"></div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a class="active" href="skill.html">Skills</a></li>
+          <li><a href="education.html">Education</a></li>
+          <li><a href="project.html">Project</a></li>
+          <li><a href="experience.html">Experience</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- navbar ends -->
+    <section class="skills" id="skills">
+      <div id="particles-js"></div>
+      <div class="skills-header">
+        <br />
+        <br />
+        <br />
+        <h2>
+          <i class="fas fa-laptop-code"></i> Skills & <span>Abilities</span>
+        </h2>
       </div>
-      
-      <!-- Overlay and Details Container -->
-      <div id="overlay" class="overlay" onclick="hideDetails()"></div>
-      <div class="details-bar" id="details-bar">
-        <h2 id="details-title"></h2>
-        <p id="details-description"></p>
-        <p><strong>Rating:</strong> <span id="details-rating"></span></p>
-      </div>      
-            
-      <div class="skill-card" onclick="showDetails('CSS', 'During my diploma, CSS was fundamental in designing visually appealing web pages. It was crucial for creating responsive and user-friendly interfaces, especially during my Final Year Project (FYP) and other Politeknik program assignments. CSS allowed me to bring life and structure to my HTML-based projects, laying the groundwork for advanced design techniques.', '90%')">
-        <img src="./src/png/csslogo.png" alt="CSS logo" />
-        <p>CSS</p>
-        <div class="rating">
-            <p class="rating-text">Rating: <span class="rating-percentage">90%</span></p>
+
+      <div class="skills-container">
+        <div
+          class="skill-card"
+          onclick="
+            showDetails(
+              'HTML',
+              'HyperText Markup Language (HTML) is the standard language for creating web pages. My journey with HTML began during my diploma studies, where I built my first web pages and learned the foundational concepts. During my degree, I gained advanced knowledge of HTML5 features, like multimedia elements and local storage, and applied these in real-world projects. Over time, consistent practice and exposure to challenging projects refined my expertise in HTML, making me confident in creating accessible and well-structured web applications.',
+              '96%',
+            )
+          "
+        >
+          <img src="./src/png/htmllogo.png" alt="HTML logo" />
+          <p>HTML</p>
+          <div class="rating">
+            <p class="rating-text">
+              Rating: <span class="rating-percentage">96%</span>
+            </p>
+            <progress class="rating-bar" value="96" max="100"></progress>
+          </div>
+        </div>
+
+        <!-- Overlay and Details Container -->
+        <div id="overlay" class="overlay" onclick="hideDetails()"></div>
+        <div class="details-bar" id="details-bar">
+          <h2 id="details-title"></h2>
+          <p id="details-description"></p>
+          <p><strong>Rating:</strong> <span id="details-rating"></span></p>
+        </div>
+
+        <div
+          class="skill-card"
+          onclick="
+            showDetails(
+              'CSS',
+              'During my diploma, CSS was fundamental in designing visually appealing web pages. It was crucial for creating responsive and user-friendly interfaces, especially during my Final Year Project (FYP) and other Politeknik program assignments. CSS allowed me to bring life and structure to my HTML-based projects, laying the groundwork for advanced design techniques.',
+              '90%',
+            )
+          "
+        >
+          <img src="./src/png/csslogo.png" alt="CSS logo" />
+          <p>CSS</p>
+          <div class="rating">
+            <p class="rating-text">
+              Rating: <span class="rating-percentage">90%</span>
+            </p>
             <progress class="rating-bar" value="90" max="100"></progress>
           </div>
-      </div>
+        </div>
 
-
-      <div class="skill-card" onclick="showDetails('JavaScript', 'JavaScript introduced me to the world of interactivity in web development. It was pivotal in enabling dynamic content and enhancing user experiences in my projects. Learning JavaScript during my diploma was an eye-opener, as I realized the potential of combining logic with design.', '85%')">
-        <img src="./src/png/jslogo.png" alt="JavaScript logo" />
-        <p>JavaScript</p>
-        <div class="rating" >
-            <p class="rating-text">Rating: <span class="rating-percentage">85%</span></p>
+        <div
+          class="skill-card"
+          onclick="
+            showDetails(
+              'JavaScript',
+              'JavaScript introduced me to the world of interactivity in web development. It was pivotal in enabling dynamic content and enhancing user experiences in my projects. Learning JavaScript during my diploma was an eye-opener, as I realized the potential of combining logic with design.',
+              '85%',
+            )
+          "
+        >
+          <img src="./src/png/jslogo.png" alt="JavaScript logo" />
+          <p>JavaScript</p>
+          <div class="rating">
+            <p class="rating-text">
+              Rating: <span class="rating-percentage">85%</span>
+            </p>
             <progress class="rating-bar" value="85" max="100"></progress>
           </div>
-      </div>
-      <div class="skill-card" onclick="showDetails('Bootstrap', 'Bootstrap streamlined my web development process during my diploma, making it easier to create responsive, mobile-first designs. The pre-built components and grid system were especially useful in my FYP and group projects, saving time while maintaining consistency in design.', '98%')">
-        <img src="./src/png/bootstraplogo.png" alt="Bootstrap logo" />
-        <p>Bootstrap</p>
-        <div class="rating">
-            <p class="rating-text">Rating: <span class="rating-percentage">98%</span></p>
+        </div>
+        <div
+          class="skill-card"
+          onclick="
+            showDetails(
+              'Bootstrap',
+              'Bootstrap streamlined my web development process during my diploma, making it easier to create responsive, mobile-first designs. The pre-built components and grid system were especially useful in my FYP and group projects, saving time while maintaining consistency in design.',
+              '98%',
+            )
+          "
+        >
+          <img src="./src/png/bootstraplogo.png" alt="Bootstrap logo" />
+          <p>Bootstrap</p>
+          <div class="rating">
+            <p class="rating-text">
+              Rating: <span class="rating-percentage">98%</span>
+            </p>
             <progress class="rating-bar" value="98" max="100"></progress>
           </div>
-      </div>
-      <div class="skill-card" onclick="showDetails('ReactJS', 'ReactJS became a cornerstone of my web development journey during my degree. It enabled me to create dynamic, component-based web applications. ReactJS was especially valuable for team projects, allowing us to develop scalable and maintainable solutions.', '75%')">
-        <img src="./src/png/reactlogo.png" alt="ReactJS logo" />
-        <p>ReactJS</p>
-        <div class="rating">
-            <p class="rating-text">Rating: <span class="rating-percentage">75%</span></p>
+        </div>
+        <div
+          class="skill-card"
+          onclick="
+            showDetails(
+              'ReactJS',
+              'ReactJS became a cornerstone of my web development journey during my degree. It enabled me to create dynamic, component-based web applications. ReactJS was especially valuable for team projects, allowing us to develop scalable and maintainable solutions.',
+              '75%',
+            )
+          "
+        >
+          <img src="./src/png/reactlogo.png" alt="ReactJS logo" />
+          <p>ReactJS</p>
+          <div class="rating">
+            <p class="rating-text">
+              Rating: <span class="rating-percentage">75%</span>
+            </p>
             <progress class="rating-bar" value="75" max="100"></progress>
           </div>
-      </div>
-      <div class="skill-card" onclick="showDetails('GitHub', 'Learning GitHub during my degree introduced me to version control and collaborative development. It became an integral tool for managing code repositories, tracking changes, and working efficiently with teammates on projects.', '93%')">
-        <img src="./src/png/gitlogo.png" alt="GitHub logo" />
-        <p>GitHub</p>
-        <div class="rating">
-            <p class="rating-text">Rating: <span class="rating-percentage">93%</span></p>
+        </div>
+        <div
+          class="skill-card"
+          onclick="
+            showDetails(
+              'GitHub',
+              'Learning GitHub during my degree introduced me to version control and collaborative development. It became an integral tool for managing code repositories, tracking changes, and working efficiently with teammates on projects.',
+              '93%',
+            )
+          "
+        >
+          <img src="./src/png/gitlogo.png" alt="GitHub logo" />
+          <p>GitHub</p>
+          <div class="rating">
+            <p class="rating-text">
+              Rating: <span class="rating-percentage">93%</span>
+            </p>
             <progress class="rating-bar" value="93" max="100"></progress>
           </div>
-      </div>
-      <div class="skill-card" onclick="showDetails('C++', 'HyperText Markup Language is the standard language for creating web pages.', '98%')">
-        <img src="./src/png/cpplogo.png" alt="c++ language logo" />
-        <p>C++</p>
-        <div class="rating">
-            <p class="rating-text">Rating: <span class="rating-percentage">98%</span></p>
+        </div>
+        <div
+          class="skill-card"
+          onclick="
+            showDetails(
+              'C++',
+              'HyperText Markup Language is the standard language for creating web pages.',
+              '98%',
+            )
+          "
+        >
+          <img src="./src/png/cpplogo.png" alt="c++ language logo" />
+          <p>C++</p>
+          <div class="rating">
+            <p class="rating-text">
+              Rating: <span class="rating-percentage">98%</span>
+            </p>
             <progress class="rating-bar" value="98" max="100"></progress>
           </div>
-      </div>
-      <div class="skill-card" onclick="showDetails('ADOBE PS', 'Adobe Photoshop was essential for creating and editing graphics for my web designs during the diploma. It helped me enhance the visual appeal of my projects by crafting custom images, icons, and layouts that aligned with the overall design theme.', '83%')">
-        <img src="./src/png/pslogo.png" alt="photoshop logo" />
-        <p>ADOBE PS</p>
-        <div class="rating">
-            <p class="rating-text">Rating: <span class="rating-percentage">83%</span></p>
+        </div>
+        <div
+          class="skill-card"
+          onclick="
+            showDetails(
+              'ADOBE PS',
+              'Adobe Photoshop was essential for creating and editing graphics for my web designs during the diploma. It helped me enhance the visual appeal of my projects by crafting custom images, icons, and layouts that aligned with the overall design theme.',
+              '83%',
+            )
+          "
+        >
+          <img src="./src/png/pslogo.png" alt="photoshop logo" />
+          <p>ADOBE PS</p>
+          <div class="rating">
+            <p class="rating-text">
+              Rating: <span class="rating-percentage">83%</span>
+            </p>
             <progress class="rating-bar" value="83" max="100"></progress>
           </div>
-      </div>
-      <div class="skill-card" onclick="showDetails('FIGMA', 'Figma enhanced my UI/UX design capabilities during my degree. It was instrumental in prototyping and designing user-friendly interfaces for web and mobile applications, ensuring that our projects were visually appealing and functionally effective.', '80%')">
-        <img src="./src/png/figmalogo.png" alt="figma logo" />
-        <p>FIGMA</p>
-        <div class="rating">
-            <p class="rating-text">Rating: <span class="rating-percentage">80%</span></p>
+        </div>
+        <div
+          class="skill-card"
+          onclick="
+            showDetails(
+              'FIGMA',
+              'Figma enhanced my UI/UX design capabilities during my degree. It was instrumental in prototyping and designing user-friendly interfaces for web and mobile applications, ensuring that our projects were visually appealing and functionally effective.',
+              '80%',
+            )
+          "
+        >
+          <img src="./src/png/figmalogo.png" alt="figma logo" />
+          <p>FIGMA</p>
+          <div class="rating">
+            <p class="rating-text">
+              Rating: <span class="rating-percentage">80%</span>
+            </p>
             <progress class="rating-bar" value="80" max="100"></progress>
           </div>
-      </div>
-      <div class="skill-card" onclick="showDetails('ADOBE AI', 'Adobe Illustrator complemented Photoshop in my diploma projects, especially for creating vector graphics and logo designs. Its versatility allowed me to produce high-quality visuals that enriched my projects and presentations.', '86%')">
-        <img src="./src/png/ailogo.png" alt="adobe illustrator logo" />
-        <p>ADOBE AI</p>
-        <div class="rating">
-            <p class="rating-text">Rating: <span class="rating-percentage">86%</span></p>
+        </div>
+        <div
+          class="skill-card"
+          onclick="
+            showDetails(
+              'ADOBE AI',
+              'Adobe Illustrator complemented Photoshop in my diploma projects, especially for creating vector graphics and logo designs. Its versatility allowed me to produce high-quality visuals that enriched my projects and presentations.',
+              '86%',
+            )
+          "
+        >
+          <img src="./src/png/ailogo.png" alt="adobe illustrator logo" />
+          <p>ADOBE AI</p>
+          <div class="rating">
+            <p class="rating-text">
+              Rating: <span class="rating-percentage">86%</span>
+            </p>
             <progress class="rating-bar" value="86" max="100"></progress>
           </div>
-      </div>
-    </div>
-  </section>
-  
-
-  <script>
-   document.addEventListener("DOMContentLoaded", () => {
-  const skillCards = document.querySelectorAll(".skill-card");
-
-  const observer = new IntersectionObserver(
-    (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add("active");
-        }
-      });
-    },
-    { threshold: 0.2 }
-  );
-
-  skillCards.forEach((card) => observer.observe(card));
-});
-
-  </script>
-   
-<!-- footer section starts -->
-<section class="footer">
-
-  <div class="box-container">
-
-      <div class="box">
-          <h3>Kirtigan's Portfolio</h3>
-          <p>Thank you for visiting my personal portfolio website. Connect with me over socials. <br/> <br/> Keep Rising 🚀. Connect with me over live chat!</p>
-      </div>
-
-      <div class="box">
-          <h3>quick links</h3>
-          <a href="index.html"><i class="fas fa-chevron-circle-right"></i> home</a>
-          <a href="about.html"><i class="fas fa-chevron-circle-right"></i> about</a>
-          <a href="skill.html"><i class="fas fa-chevron-circle-right"></i> skills</a>
-          <a href="education.html"><i class="fas fa-chevron-circle-right"></i> education</a>
-          <a href="project.html"><i class="fas fa-chevron-circle-right"></i> project</a>
-          <a href="experience.html"><i class="fas fa-chevron-circle-right"></i> experience</a>
-      </div>
-
-      <div class="box">
-          <h3>contact info</h3>
-          <p> <i class="fas fa-phone"></i>+60 147244210</p>
-          <p> <i class="fas fa-envelope"></i>Kirtiganbalu85@gmail.com</p>
-          <p> <i class="fas fa-map-marked-alt"></i>Kuala Selangor, Selangor,Malaysia</p>
-          <div class="share">
-
-            <a href="https://www.tiktok.com/@kirtiganbalu" class="fab fa-tiktok" aria-label="tiktok" target="_blank"></a>
-            <a href="https://github.com/kirtiganbalu" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
-            <a href="https://wa.me/60147244210" class="fab fa-whatsapp" aria-label="whatsapp" target="_blank"></a>
-            <a href="https://t.me/+60147244210" class="fab fa-telegram" aria-label="telegram" target="_blank"></a>
-            <a href="https://www.instagram.com/b.kirtigan.p" class="fab fa-instagram" aria-label="instagram" target="_blank"></a>
+        </div>
+        <div
+          class="skill-card"
+          onclick="
+            showDetails(
+              'Flutter',
+              'Flutter became central to my degree projects, allowing me to build cross-platform mobile applications. I used it with Firebase and Google Maps API for my Final Year Project, SmartPark, and for Campus Hub, a university marketplace app.',
+              '85%',
+            )
+          "
+        >
+          <img src="./src/png/flutterlogo.png" alt="flutter logo" />
+          <p>Flutter</p>
+          <div class="rating">
+            <p class="rating-text">
+              Rating: <span class="rating-percentage">85%</span>
+            </p>
+            <progress class="rating-bar" value="85" max="100"></progress>
           </div>
+        </div>
+        <div
+          class="skill-card"
+          onclick="
+            showDetails(
+              'Firebase',
+              'Firebase powered the backend of my mobile projects, including Firestore for real-time data and authentication. It was key to delivering real-time synchronization in SmartPark and Campus Hub.',
+              '82%',
+            )
+          "
+        >
+          <img src="./src/png/firebaselogo.png" alt="firebase logo" />
+          <p>Firebase</p>
+          <div class="rating">
+            <p class="rating-text">
+              Rating: <span class="rating-percentage">82%</span>
+            </p>
+            <progress class="rating-bar" value="82" max="100"></progress>
+          </div>
+        </div>
+        <div
+          class="skill-card"
+          onclick="
+            showDetails(
+              'PHP & MySQL',
+              'PHP and MySQL formed the backbone of my full-stack web projects, including iRHS, the Return to Home System built for my diploma Final Year Project, which was deployed and used in real hostel operations for a year.',
+              '88%',
+            )
+          "
+        >
+          <img src="./src/png/phplogo.png" alt="php logo" />
+          <p>PHP & MySQL</p>
+          <div class="rating">
+            <p class="rating-text">
+              Rating: <span class="rating-percentage">88%</span>
+            </p>
+            <progress class="rating-bar" value="88" max="100"></progress>
+          </div>
+        </div>
+        <div
+          class="skill-card"
+          onclick="
+            showDetails(
+              'Python',
+              'Python is one of the programming languages I work with, used in coursework and problem-solving projects requiring quick scripting and data handling.',
+              '80%',
+            )
+          "
+        >
+          <img src="./src/png/pythonlogo.png" alt="python logo" />
+          <p>Python</p>
+          <div class="rating">
+            <p class="rating-text">
+              Rating: <span class="rating-percentage">80%</span>
+            </p>
+            <progress class="rating-bar" value="80" max="100"></progress>
+          </div>
+        </div>
+        <div
+          class="skill-card"
+          onclick="
+            showDetails(
+              'Power Platform',
+              'During my internship at PERODUA Manufacturing, I used Microsoft SharePoint Lists, Power Apps, Power Automate and Power BI to digitize business workflows and build data dashboards, including the MSRF, Temporary Access Card and Lorry/Van Logbook systems.',
+              '78%',
+            )
+          "
+        >
+          <img src="./src/png/powerbilogo.png" alt="power platform logo" />
+          <p>Power Platform</p>
+          <div class="rating">
+            <p class="rating-text">
+              Rating: <span class="rating-percentage">78%</span>
+            </p>
+            <progress class="rating-bar" value="78" max="100"></progress>
+          </div>
+        </div>
       </div>
-  </div>
+    </section>
 
-  <h1 class="credit">Designed with <i class="fa fa-heart pulse"></i> by <a href="https://www.linkedin.com/in/jigar-sable"> B.Kirtigan.P</a></h1>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const skillCards = document.querySelectorAll(".skill-card");
 
-</section>
-<!-- footer section ends -->
-  
-  
-  <!-- scroll top btn -->
-  <a href="skill.html" aria-label="ScrollTop" class="fas fa-angle-up" id="scroll-top"></a>
-  <!-- scroll back to top -->
-  
-  
-  <!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
-  <!-- jquery cdn -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  
-  <!-- typed.js cdn -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js" integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  
-  <!-- particle.js links -->
-  <script src="./assets/js/particles.min.js"></script>
-  <script src="./assets/js/app.js"></script>
-  
-  <!-- vanilla tilt.js links -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js" integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-  
-  <!-- scroll reveal anim -->
-  <script src="https://unpkg.com/scrollreveal"></script>
-  
-  <script
-        type="text/javascript"
-        src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
-      ></script>
-  
-  <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
-  
-  <script src="./assets/js/script.js"></script>
+        const observer = new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.isIntersecting) {
+                entry.target.classList.add("active");
+              }
+            });
+          },
+          { threshold: 0.2 },
+        );
 
-  <script>
-    function showDetails(title, description, rating) {
-const detailsBar = document.getElementById("details-bar");
-const overlay = document.getElementById("overlay");
+        skillCards.forEach((card) => observer.observe(card));
+      });
+    </script>
 
-document.getElementById("details-title").innerText = title;
-document.getElementById("details-description").innerText = description;
-document.getElementById("details-rating").innerText = rating;
+    <!-- footer section starts -->
+    <section class="footer">
+      <div class="box-container">
+        <div class="box">
+          <h3>Kirtigan's Portfolio</h3>
+          <p>
+            Thank you for visiting my personal portfolio website. Connect with
+            me over socials. <br />
+            <br />
+            Keep Rising 🚀. Connect with me over live chat!
+          </p>
+        </div>
 
-detailsBar.style.display = "block"; // Show the details bar
-overlay.style.display = "block";   // Show the overlay
-}
+        <div class="box">
+          <h3>quick links</h3>
+          <a href="index.html"
+            ><i class="fas fa-chevron-circle-right"></i> home</a
+          >
+          <a href="about.html"
+            ><i class="fas fa-chevron-circle-right"></i> about</a
+          >
+          <a href="skill.html"
+            ><i class="fas fa-chevron-circle-right"></i> skills</a
+          >
+          <a href="education.html"
+            ><i class="fas fa-chevron-circle-right"></i> education</a
+          >
+          <a href="project.html"
+            ><i class="fas fa-chevron-circle-right"></i> project</a
+          >
+          <a href="experience.html"
+            ><i class="fas fa-chevron-circle-right"></i> experience</a
+          >
+        </div>
 
-function hideDetails() {
-const detailsBar = document.getElementById("details-bar");
-const overlay = document.getElementById("overlay");
+        <div class="box">
+          <h3>contact info</h3>
+          <p><i class="fas fa-phone"></i>+60 147244210</p>
+          <p><i class="fas fa-envelope"></i>Kirtiganbalu85@gmail.com</p>
+          <p>
+            <i class="fas fa-map-marked-alt"></i>Kuala Selangor,
+            Selangor,Malaysia
+          </p>
+          <div class="share">
+            <a
+              href="https://www.tiktok.com/@kirtiganbalu"
+              class="fab fa-tiktok"
+              aria-label="tiktok"
+              target="_blank"
+            ></a>
+            <a
+              href="https://github.com/kirtiganbalu"
+              class="fab fa-github"
+              aria-label="GitHub"
+              target="_blank"
+            ></a>
+            <a
+              href="https://wa.me/60147244210"
+              class="fab fa-whatsapp"
+              aria-label="whatsapp"
+              target="_blank"
+            ></a>
+            <a
+              href="https://t.me/+60147244210"
+              class="fab fa-telegram"
+              aria-label="telegram"
+              target="_blank"
+            ></a>
+            <a
+              href="https://www.instagram.com/b.kirtigan.p"
+              class="fab fa-instagram"
+              aria-label="instagram"
+              target="_blank"
+            ></a>
+          </div>
+        </div>
+      </div>
 
-detailsBar.style.display = "none"; // Hide the details bar
-overlay.style.display = "none";   // Hide the overlay
-}
+      <h1 class="credit">
+        Designed with <i class="fa fa-heart pulse"></i> by
+        <a href="https://www.linkedin.com/in/jigar-sable"> B.Kirtigan.P</a>
+      </h1>
+    </section>
+    <!-- footer section ends -->
 
+    <!-- scroll top btn -->
+    <a
+      href="skill.html"
+      aria-label="ScrollTop"
+      class="fas fa-angle-up"
+      id="scroll-top"
+    ></a>
+    <!-- scroll back to top -->
 
-  </script>
-  
-  
+    <!-- ==== ALL MAJOR JAVASCRIPT CDNS STARTS ==== -->
+    <!-- jquery cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- typed.js cdn -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.5/typed.min.js"
+      integrity="sha512-1KbKusm/hAtkX5FScVR5G36wodIMnVd/aP04af06iyQTkD17szAMGNmxfNH+tEuFp3Og/P5G32L1qEC47CZbUQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- particle.js links -->
+    <script src="./assets/js/particles.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+
+    <!-- vanilla tilt.js links -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.0/vanilla-tilt.min.js"
+      integrity="sha512-SttpKhJqONuBVxbRcuH0wezjuX+BoFoli0yPsnrAADcHsQMW8rkR84ItFHGIkPvhnlRnE2FaifDOUw+EltbuHg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+
+    <!-- scroll reveal anim -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"
+    ></script>
+
+    <!-- ==== ALL MAJOR JAVASCRIPT CDNS ENDS ==== -->
+
+    <script src="./assets/js/script.js"></script>
+
+    <script>
+      function showDetails(title, description, rating) {
+        const detailsBar = document.getElementById("details-bar");
+        const overlay = document.getElementById("overlay");
+
+        document.getElementById("details-title").innerText = title;
+        document.getElementById("details-description").innerText = description;
+        document.getElementById("details-rating").innerText = rating;
+
+        detailsBar.style.display = "block"; // Show the details bar
+        overlay.style.display = "block"; // Show the overlay
+      }
+
+      function hideDetails() {
+        const detailsBar = document.getElementById("details-bar");
+        const overlay = document.getElementById("overlay");
+
+        detailsBar.style.display = "none"; // Hide the details bar
+        overlay.style.display = "none"; // Hide the overlay
+      }
+    </script>
   </body>
-  </html>
-  
+</html>
